@@ -11,40 +11,62 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/mobile-menu.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="nav-navbar">
-        <div id="mobile-menu-btn">
-          <div class="nav-navbar-mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="nav-navbar-content">
-          <div class="nav-navbar-content-logo-container">
-            <div class="nav-navbar-content-logo-container-square">H</div>
-            <div class="nav-navbar-content-logo-container-text">
-              <span>Hotel</span> Miranda
+      <div class="bground-header-container">
+        <p class="bground-header-container-text">
+          We make you feel comfortable
+        </p>
+        <div class="container-nav">
+          <nav class="container-nav-navbar">
+            <div id="mobile-menu-btn">
+              <div class="container-nav-navbar-mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-            <div class="nav-navbar-content-pages">
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Rooms</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+            <div class="container-nav-navbar-content">
+              <div class="container-nav-navbar-content-logo-container">
+                <div class="container-nav-navbar-content-logo-container-square">
+                  H
+                </div>
+                <div class="container-nav-navbar-content-logo-container-text">
+                  <span>Hotel</span> Miranda
+                </div>
+                <div class="container-nav-navbar-content-pages">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="container-nav-navbar-images-container">
+              <div class="container-nav-navbar-images-container-border">
+                <object
+                  data="assets/person_outline_black.svg"
+                  width="28"
+                ></object>
+              </div>
+              <div class="container-nav-navbar-images-container-border">
+                <object data="assets/search_black.svg" width="28"></object>
+              </div>
+            </div>
+          </nav>
         </div>
-        <div class="nav-navbar-images-container">
-          <object data="assets/person_outline_black.svg" width="28"></object>
-          <object data="assets/search_black.svg" width="28"></object>
-        </div>
-      </nav>
+      </div>
       <aside class="mobile-menu mobile-menu--closed">
         <ul>
           <li><a href="#">About Us</a></li>
