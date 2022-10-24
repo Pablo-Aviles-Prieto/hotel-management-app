@@ -8,38 +8,138 @@
   gap: 1.75rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   &-mobile-menu-btn {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 20px;
-    height: 14px;
+    height: 16px;
+    gap: 5px;
     span {
       width: 100%;
       height: 2px;
       background-color: variables.$color-black;
+      transition: all 0.8s;
+      transform-origin: left;
+    }
+    &--open {
+      span:first-child {
+        transform: rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:last-child {
+        transform: rotate(-45deg);
+      }
     }
   }
-  &-logo-container {
-    display: flex;
-    gap: 0.8rem;
-    align-items: center;
+  &-content {
     width: 100%;
-    &-square {
-      padding: 0.6rem;
-      font-weight: 700;
-      font-size: 1.2rem;
-      box-shadow: 0px 14px 24px variables.$shadow-medium-grey;
-    }
-    &-text {
-      max-width: 1.3rem;
-      font-size: 0.7rem;
-      span {
-        font-weight: bold;
+    &-logo-container {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      &-square {
+        padding: 0.6rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+        box-shadow: 0px 14px 24px variables.$shadow-medium-grey;
       }
+      &-text {
+        max-width: 3.4rem;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    &-pages {
+      display: none;
     }
   }
   &-images-container {
     display: flex;
     gap: 1rem;
+  }
+}
+
+.mobile-menu {
+  margin: 1rem 1.5rem;
+
+  ul {
+    overflow: hidden;
+    max-height: 10rem;
+    transition: all 1s ease-out;
+  }
+  li {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &--closed {
+    ul {
+      max-height: 0px;
+      transition: all 0.7s ease-out;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .nav-navbar {
+    padding: 0 3.5rem;
+    gap: 2.5rem;
+    &-logo-container {
+      &-text {
+        max-width: 3.8rem;
+        font-size: 0.8rem;
+      }
+    }
+    &-images-container {
+      gap: 2rem;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .nav-navbar {
+    padding: 0 3.5rem;
+    gap: 3.2rem;
+    padding-right: 4.5rem;
+    &-content {
+      &-logo-container {
+        gap: 1rem;
+        &-square {
+          padding: 0.8rem;
+          font-size: 1.4rem;
+        }
+        &-text {
+          max-width: 5rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    &-images-container {
+      gap: 3rem;
+      object {
+        width: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: 930px) {
+  .nav-navbar {
+    &-content {
+      &-pages {
+        display: block;
+        ul {
+          display: flex;
+        }
+      }
+    }
   }
 }

@@ -17,3 +17,8 @@ body {
   min-width: 320px;
   background-color: variables.$color-white;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

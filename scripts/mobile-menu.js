@@ -1,7 +1,10 @@
 const mobileBtn = document.querySelector('#mobile-menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMnuIcon = document.querySelector('.nav-navbar-mobile-menu-btn');
 
 const mobileMenuHandler = () => {
-  console.log('test');
+  mobileMenu.classList.toggle('mobile-menu--closed');
+  mobileMnuIcon.classList.toggle('nav-navbar-mobile-menu-btn--open');
 };
 
 mobileBtn.addEventListener('click', mobileMenuHandler);
