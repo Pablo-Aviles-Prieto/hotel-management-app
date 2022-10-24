@@ -1,0 +1,19 @@
+@use 'modules/variables';
+@use 'modules/header';
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-family: variables.$font;
+  list-style: none;
+}
+
+body {
+  min-width: 320px;
+  background-color: variables.$color-white;
+}
