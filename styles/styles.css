@@ -150,7 +150,7 @@
     display: block;
     margin-bottom: 0.6rem;
     text-transform: capitalize;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
   }
   .bground-header-container .container-nav {
@@ -164,7 +164,8 @@
   .bground-header-container .container-nav-navbar-content-logo-container {
     min-width: 10rem;
   }
-  .bground-header-container .container-nav-navbar-content-logo-container-square {
+  .bground-header-container
+    .container-nav-navbar-content-logo-container-square {
     padding: 1.3rem 1.7rem;
     font-size: 2.3rem;
   }
@@ -199,7 +200,9 @@
     align-items: center;
     justify-content: center;
   }
-  .bground-header-container .container-nav-navbar-images-container-border object {
+  .bground-header-container
+    .container-nav-navbar-images-container-border
+    object {
     width: 25px;
   }
   .mobile-menu {
@@ -225,7 +228,7 @@ html,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   list-style: none;
 }
 
