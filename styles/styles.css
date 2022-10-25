@@ -447,7 +447,7 @@ input::-webkit-datetime-edit {
   background-color: #f9f9f9;
 }
 .about-section-description-legend {
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
   color: #777777;
   font-weight: 700;
   font-size: 13px;
@@ -571,6 +571,55 @@ input::-webkit-datetime-edit {
   max-width: 90%;
 }
 
+@media (min-width: 920px) {
+  .about-section-description {
+    padding: 2rem 2rem 9rem 2rem;
+  }
+}
+@media (min-width: 1150px) {
+  #about-section {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1135px;
+    margin: 5rem auto;
+  }
+  .about-section-description {
+    width: 100%;
+    margin-left: -9rem;
+    margin-top: 5rem;
+    padding-top: 0;
+    padding-left: 10rem;
+    padding-bottom: 17rem;
+  }
+  .about-section-description-title, .about-section-description-info {
+    max-width: 25rem;
+  }
+  .about-section-images {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 0 2.5rem 0 0;
+  }
+  .about-section-images-first {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column-reverse;
+    max-height: 38rem;
+  }
+  .about-section-images-second {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-height: 38rem;
+  }
+}
+@media (min-width: 1500px) {
+  #about-section {
+    margin: 5rem 15% 5rem 15%;
+  }
+}
 html,
 * {
   box-sizing: border-box;
