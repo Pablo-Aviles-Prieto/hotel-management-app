@@ -24,7 +24,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <script src="scripts/mobile-menu.js" defer></script>
+    <script src="scripts/room-slider.js" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -62,12 +67,15 @@
             <div class="container-nav-navbar-images-container">
               <div class="container-nav-navbar-images-container-border">
                 <object
-                  data="assets/person_outline_black.svg"
+                  data="assets/icons/person_outline_black.svg"
                   width="28"
                 ></object>
               </div>
               <div class="container-nav-navbar-images-container-border">
-                <object data="assets/search_black.svg" width="28"></object>
+                <object
+                  data="assets/icons/search_black.svg"
+                  width="28"
+                ></object>
               </div>
             </div>
           </nav>
@@ -151,13 +159,13 @@
         <div class="about-section-images-first">
           <div class="about-section-images-first-img">
             <img
-              src="assets/underground1.jpg"
+              src="assets/main-hotel/underground1.jpg"
               alt="Some amazing views of the hotel"
             />
           </div>
           <div class="about-section-images-first-description">
             <div class="about-section-images-first-description-img">
-              <object data="assets/team-group.svg" width="60"></object>
+              <object data="assets/icons/team-group.svg" width="60"></object>
             </div>
             <p class="about-section-images-first-description-title">
               Strong Team
@@ -170,11 +178,17 @@
         </div>
         <div class="about-section-images-second">
           <div class="about-section-images-second-img">
-            <img src="assets/underground2.jpg" alt="More views of the hotel" />
+            <img
+              src="assets/main-hotel/underground2.jpg"
+              alt="More views of the hotel"
+            />
           </div>
           <div class="about-section-images-second-description">
             <div class="about-section-images-second-description-img">
-              <object data="assets/calendar_range.svg" width="60"></object>
+              <object
+                data="assets/icons/calendar_range.svg"
+                width="60"
+              ></object>
             </div>
             <p class="about-section-images-second-description-title">
               Luxury Room
@@ -184,6 +198,91 @@
               eiusmod tempor.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="rooms-section">
+      <div class="rooms-section-title">
+        <p>Rooms</p>
+        <h2>Hand Picked Rooms</h2>
+      </div>
+      <div class="rooms-section-slide">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide-top">
+                <object data="assets/icons/bed.svg" width="18"></object>
+                <object data="assets/icons/wifi.svg" width="18"></object>
+                <object data="assets/icons/car.svg" width="18"></object>
+                <object
+                  data="assets/icons/air-conditioner.svg"
+                  width="18"
+                ></object>
+                <object data="assets/icons/gym.svg" width="18"></object>
+                <object data="assets/icons/smoke-free.svg" width="18"></object>
+                <object data="assets/icons/cocktail.svg" width="18"></object>
+              </div>
+              <img src="./assets/hotel-rooms/room1.jpg" />
+              <div class="swiper-slide-bottom">
+                <div class="swiper-slide-bottom-title">Minimal Duplex Room</div>
+                <div class="swiper-slide-bottom-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  amet alias velit quia consequuntur dolorum iure.
+                </div>
+                <div class="swiper-slide-bottom-price">
+                  $345<span>/Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-top">
+                <object data="assets/icons/bed.svg" width="18"></object>
+                <object data="assets/icons/car.svg" width="18"></object>
+                <object
+                  data="assets/icons/air-conditioner.svg"
+                  width="18"
+                ></object>
+                <object data="assets/icons/gym.svg" width="18"></object>
+                <object data="assets/icons/cocktail.svg" width="18"></object>
+              </div>
+              <img src="./assets/hotel-rooms/room2.jpg" />
+              <div class="swiper-slide-bottom">
+                <div class="swiper-slide-bottom-title">Duplex Room</div>
+                <div class="swiper-slide-bottom-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  amet alias velit quia consequuntur dolorum iure.
+                </div>
+                <div class="swiper-slide-bottom-price">
+                  $345<span>/Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-top">
+                <object data="assets/icons/bed.svg" width="18"></object>
+                <object data="assets/icons/wifi.svg" width="18"></object>
+                <object data="assets/icons/car.svg" width="18"></object>
+                <object
+                  data="assets/icons/air-conditioner.svg"
+                  width="18"
+                ></object>
+              </div>
+              <img src="./assets/hotel-rooms/room3.jpg" />
+              <div class="swiper-slide-bottom">
+                <div class="swiper-slide-bottom-title">The bright Room</div>
+                <div class="swiper-slide-bottom-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  amet alias velit quia consequuntur dolorum iure.
+                </div>
+                <div class="swiper-slide-bottom-price">
+                  $345<span>/Night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
     </section>
