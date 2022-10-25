@@ -157,7 +157,7 @@
   .bground-header-container {
     position: relative;
     height: 6.25rem;
-    background-color: #222222;
+    background-color: variables.$color-light-black;
     padding: 0 10%;
     padding-top: 1.1rem;
     &-text {

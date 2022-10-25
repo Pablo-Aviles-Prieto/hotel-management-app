@@ -99,29 +99,36 @@
     <section id="availability-section">
       <div class="availability-container">
         <form class="availability-container-form">
-          <div class="availability-container-form-input">
-            <label for="arrival-input">Arrival Date</label>
-            <input
-              class="input-field date"
-              type="date"
-              id="arrival-input"
-              value="2022-10-31"
-              min="2021-10-24"
-              max="2023-10-24"
-              placeholder="Date and Time"
-            />
+          <div class="availability-container-form--flex">
+            <div class="availability-container-form-input">
+              <label for="arrival-input">Arrival Date</label>
+              <input
+                class="input-field date"
+                type="date"
+                id="arrival-input"
+                value="2022-10-25"
+                min="2021-10-24"
+                max="2023-10-24"
+                placeholder="Date and Time"
+                required
+              />
+            </div>
+            <div class="availability-container-form-input">
+              <label for="departure-input">LeDeparture Date</label>
+              <input
+                class="input-field date"
+                type="date"
+                id="departure-input"
+                value="2022-10-31"
+                min="2021-10-24"
+                max="2023-10-24"
+                placeholder="Date and Time"
+                required
+              />
+            </div>
           </div>
-          <div class="availability-container-form-input">
-            <label for="arrival-input">LeDeparture Date</label>
-            <input
-              class="input-field date"
-              type="date"
-              id="arrival-input"
-              value="2022-10-31"
-              min="2021-10-24"
-              max="2023-10-24"
-              placeholder="Date and Time"
-            />
+          <div class="availability-container-form-btn">
+            <button>Check availability</button>
           </div>
         </form>
       </div>
