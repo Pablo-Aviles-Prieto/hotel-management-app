@@ -3,8 +3,8 @@
 @use 'buttons';
 
 .availability-container {
-  min-height: 375px;
-  padding: 3rem 1rem;
+  min-height: 325px;
+  padding: 3rem 1rem 1.5rem 1rem;
   background-color: variables.$color-light-black;
   &-form {
     color: variables.$color-white;
