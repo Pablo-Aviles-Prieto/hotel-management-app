@@ -345,13 +345,13 @@
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
-  color: #bead8e;
   opacity: 1;
   display: block;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
   border-width: thin;
+  filter: invert(0.5) sepia(1);
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -914,6 +914,62 @@ input::-webkit-datetime-edit {
     height: 335px;
   }
 }
+#facilities-section .facilities-container {
+  padding: 3rem 2rem;
+}
+#facilities-section .facilities-container-legend {
+  text-align: center;
+  color: #777777;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+#facilities-section .facilities-container-title {
+  text-align: center;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -1.2px;
+  color: #222222;
+}
+#facilities-section .facilities-container-card-imgs {
+  position: relative;
+  min-height: 8rem;
+  margin-bottom: 2rem;
+}
+#facilities-section .facilities-container-card-imgs object {
+  margin-top: 4rem;
+}
+#facilities-section .facilities-container-card-imgs-bground {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.04);
+}
+#facilities-section .facilities-container-card-title {
+  margin-bottom: 2rem;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: #222222;
+}
+#facilities-section .facilities-container-card-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+}
+
 html,
 * {
   box-sizing: border-box;

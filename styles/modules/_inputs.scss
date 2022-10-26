@@ -19,13 +19,13 @@
 }
 
 input[type='date']::-webkit-calendar-picker-indicator {
-  color: variables.$color-light-gold;
   opacity: 1;
   display: block;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
   border-width: thin;
+  filter: invert(0.5) sepia(1);
 }
 input[type='date']::-webkit-calendar-picker-indicator {
   position: absolute;
