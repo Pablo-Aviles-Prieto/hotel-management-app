@@ -582,7 +582,7 @@ input::-webkit-datetime-edit {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1135px;
-    margin: 5rem auto;
+    margin: 5rem 15%;
   }
   .about-section-description {
     width: 100%;
@@ -614,11 +614,6 @@ input::-webkit-datetime-edit {
     flex-direction: column;
     gap: 2rem;
     max-height: 38rem;
-  }
-}
-@media (min-width: 1500px) {
-  #about-section {
-    margin: 5rem 15%;
   }
 }
 #rooms-section {
