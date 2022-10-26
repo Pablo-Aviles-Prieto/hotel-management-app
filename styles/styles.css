@@ -819,6 +819,101 @@ input::-webkit-datetime-edit {
     right: 22%;
   }
 }
+.intro-video-container {
+  padding: 3rem 1rem;
+  color: #fff;
+  background-color: #222222;
+}
+.intro-video-container-content-legend {
+  padding: 1rem 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #bead8e;
+}
+.intro-video-container-content-title {
+  margin: 1rem auto;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+.intro-video-container-content-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #c2c2c2;
+}
+.intro-video-container-content-video {
+  margin: 2rem auto;
+  max-width: 53.2rem;
+}
+.intro-video-container-content-video video {
+  width: 100%;
+  height: 100%;
+}
+.intro-video-container-content button {
+  cursor: pointer;
+  min-width: 13.75rem;
+  height: 3.75rem;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #bead8e;
+  border: 0;
+}
+
+@media (min-width: 560px) {
+  .intro-video-container-content-title {
+    max-width: 22rem;
+    margin: 1rem 0;
+  }
+  .intro-video-container-content-description {
+    max-width: 22rem;
+  }
+}
+@media (min-width: 1000px) {
+  .intro-video-container {
+    padding: 3rem 15%;
+  }
+}
+@media (min-width: 1200px) {
+  #intro-video-section {
+    display: flex;
+  }
+  .intro-video-container {
+    width: 75%;
+  }
+  .intro-video-container-content-video {
+    position: relative;
+  }
+  .intro-video-container-content-video video {
+    position: absolute;
+    bottom: -27px;
+    right: -375px;
+    width: 524px;
+    height: 304px;
+  }
+  .intro-video-desktop-container {
+    width: 25%;
+    background-color: #ad9d82;
+  }
+}
+@media (min-width: 1400px) {
+  .intro-video-container-content-video video {
+    right: -395px;
+    width: 596px;
+    height: 335px;
+  }
+}
 html,
 * {
   box-sizing: border-box;
