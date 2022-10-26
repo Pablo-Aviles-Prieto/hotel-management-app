@@ -8,6 +8,9 @@
   }
   .facilities-container {
     padding: 3rem 2rem;
+    @media (min-width: 1100px) {
+      padding: 3rem 0;
+    }
     &-legend {
       text-align: center;
       color: variables.$color-half-grey;
@@ -27,6 +30,11 @@
       line-height: 52px;
       letter-spacing: -1.2px;
       color: variables.$color-light-black;
+      @media (min-width: 1100px) {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: -2.4px;
+      }
     }
     &-card {
       margin: auto;
@@ -64,6 +72,21 @@
         font-size: 14px;
         line-height: 24px;
         color: variables.$color-half-grey;
+      }
+    }
+    .mySwiperFacilities-mobile-container {
+      @media (min-width: 1100px) {
+        display: none;
+      }
+    }
+    .mySwiperFacilities-desktop-container {
+      display: none;
+      @media (min-width: 1100px) {
+        display: grid;
+        gap: 3.1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: auto 15%;
       }
     }
   }
