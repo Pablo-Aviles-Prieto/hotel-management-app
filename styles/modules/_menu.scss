@@ -1,0 +1,88 @@
+@use 'variables';
+
+.menu-container {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+  padding: 6rem 1rem 3rem 1rem;
+  object {
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+  }
+  &-legend {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: variables.$color-half-grey;
+  }
+  &-title {
+    font-family: variables.$font-old-standard;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: variables.$color-light-black;
+    margin-bottom: 2rem;
+  }
+  &-first-slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 97%;
+      @media (min-width: 700px) {
+        top: 93.5%;
+      }
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-button-prev {
+      left: auto;
+      right: 3rem;
+      @media (min-width: 700px) {
+        right: 4rem;
+      }
+    }
+  }
+  .food-card {
+    margin-bottom: 4rem;
+    &-item {
+      display: flex;
+      gap: 1.5rem;
+      max-height: 7.5rem;
+      margin-bottom: 1rem;
+      &--img {
+        max-width: 8.4rem;
+        max-height: 7.5rem;
+        img {
+          width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+      }
+      &--content {
+        overflow: hidden;
+        h3 {
+          margin-bottom: 1rem;
+          font-family: variables.$font-old-standard;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: -0.72px;
+          color: variables.$color-light-black;
+        }
+        p {
+          max-width: 18rem;
+          font-family: variables.$font-roboto;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 21px;
+          color: variables.$color-light-black;
+        }
+      }
+    }
+  }
+}

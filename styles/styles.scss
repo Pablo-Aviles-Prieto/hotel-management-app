@@ -1,5 +1,6 @@
 @use 'modules/variables';
 
+@use 'modules/slider_btns';
 @use 'modules/header';
 @use 'modules/first_section';
 @use 'modules/availability_section';
@@ -7,6 +8,7 @@
 @use 'modules/rooms';
 @use 'modules/intro_video';
 @use 'modules/facilities';
+@use 'modules/menu';
 
 html,
 * {

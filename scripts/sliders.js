@@ -39,3 +39,19 @@ const swiperForFacilities = new Swiper('.mySwiperFacilities', {
     clickable: true,
   },
 });
+
+const swiperForFirstMenu = new Swiper('.mySwiperFirstMenu', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

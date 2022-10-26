@@ -121,11 +121,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    width: 2rem;
-    height: 2rem;
     top: 35%;
-    border: 1px solid variables.$color-black;
-    background-color: variables.$color-white;
   }
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
@@ -134,21 +130,9 @@
   }
   .swiper-button-next {
     right: 4px;
-    color: variables.$color-black;
-  }
-  .swiper-button-next::after {
-    content: '﹥';
-    font-size: 18px;
-    font-weight: 700;
   }
   .swiper-button-prev {
     left: 4px;
-    color: variables.$color-black;
-  }
-  .swiper-button-prev::after {
-    content: '﹤';
-    font-size: 18px;
-    font-weight: 700;
   }
 }
 
@@ -169,8 +153,6 @@
     }
     .swiper-button-next,
     .swiper-button-prev {
-      width: 3rem;
-      height: 3rem;
       top: 39%;
     }
   }
