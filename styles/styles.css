@@ -345,13 +345,13 @@
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
-  color: #bead8e;
   opacity: 1;
   display: block;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
   border-width: thin;
+  filter: invert(0.5) sepia(1);
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -618,7 +618,7 @@ input::-webkit-datetime-edit {
 }
 @media (min-width: 1500px) {
   #about-section {
-    margin: 5rem 15% 5rem 15%;
+    margin: 5rem 15%;
   }
 }
 #rooms-section {
@@ -727,6 +727,7 @@ input::-webkit-datetime-edit {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 60.5rem;
 }
 .rooms-section-slide .swiper {
   margin-left: auto;
@@ -795,7 +796,7 @@ input::-webkit-datetime-edit {
   .rooms-section-slide .swiper-button-next {
     right: 19%;
   }
-  .rooms-section-slide .mySwiper .swiper-wrapper {
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
     padding: 0px 20rem;
   }
 }
@@ -805,18 +806,26 @@ input::-webkit-datetime-edit {
   }
 }
 @media (min-width: 1500px) {
-  .rooms-section-slide .mySwiper .swiper-wrapper {
-    padding: 0px 22rem;
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
+    padding: 0 22rem;
   }
 }
 @media (min-width: 1750px) {
-  .rooms-section-slide .mySwiper .swiper-wrapper {
-    padding: 0px 25rem;
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
+    padding: 0 25rem;
   }
 }
 @media (min-width: 1940px) {
   .rooms-section-slide .swiper-button-next {
     right: 22%;
+  }
+}
+@media (min-width: 2000px) {
+  .rooms-section-slide {
+    max-width: 2050px;
+  }
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
+    padding: 0;
   }
 }
 .intro-video-container {
@@ -885,7 +894,7 @@ input::-webkit-datetime-edit {
     padding: 3rem 15%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   #intro-video-section {
     display: flex;
   }
@@ -914,6 +923,100 @@ input::-webkit-datetime-edit {
     height: 335px;
   }
 }
+#facilities-section .mySwiperFacilities-mobile-container .swiper-pagination-bullet-active {
+  background: #bead8e;
+}
+#facilities-section .facilities-container {
+  padding: 3rem 2rem;
+}
+@media (min-width: 1100px) {
+  #facilities-section .facilities-container {
+    padding: 3rem 0;
+  }
+}
+#facilities-section .facilities-container-legend {
+  text-align: center;
+  color: #777777;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+#facilities-section .facilities-container-title {
+  text-align: center;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -1.2px;
+  color: #222222;
+}
+@media (min-width: 1100px) {
+  #facilities-section .facilities-container-title {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2.4px;
+  }
+}
+#facilities-section .facilities-container-card {
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 21rem;
+}
+#facilities-section .facilities-container-card-imgs {
+  position: relative;
+  min-height: 8rem;
+  margin-bottom: 2rem;
+}
+#facilities-section .facilities-container-card-imgs object {
+  margin-top: 4rem;
+}
+#facilities-section .facilities-container-card-imgs-bground {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.04);
+}
+#facilities-section .facilities-container-card-title {
+  margin-bottom: 2rem;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: #222222;
+}
+#facilities-section .facilities-container-card-description {
+  max-width: 17rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+}
+@media (min-width: 1100px) {
+  #facilities-section .facilities-container .mySwiperFacilities-mobile-container {
+    display: none;
+  }
+}
+#facilities-section .facilities-container .mySwiperFacilities-desktop-container {
+  display: none;
+}
+@media (min-width: 1100px) {
+  #facilities-section .facilities-container .mySwiperFacilities-desktop-container {
+    display: grid;
+    gap: 3.1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: auto 15%;
+  }
+}
+
 html,
 * {
   box-sizing: border-box;
@@ -929,6 +1032,11 @@ html,
 body {
   min-width: 320px;
   background-color: #fff;
+}
+@media (min-width: 3000px) {
+  body {
+    margin: 0 15%;
+  }
 }
 
 a {

@@ -6,6 +6,7 @@
 @use 'modules/about_us';
 @use 'modules/rooms';
 @use 'modules/intro_video';
+@use 'modules/facilities';
 
 html,
 * {
@@ -22,6 +23,9 @@ html,
 body {
   min-width: 320px;
   background-color: variables.$color-white;
+  @media (min-width: 3000px) {
+    margin: 0 15%;
+  }
 }
 
 a {
