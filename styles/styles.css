@@ -795,7 +795,7 @@ input::-webkit-datetime-edit {
   .rooms-section-slide .swiper-button-next {
     right: 19%;
   }
-  .rooms-section-slide .mySwiper .swiper-wrapper {
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
     padding: 0px 20rem;
   }
 }
@@ -805,12 +805,12 @@ input::-webkit-datetime-edit {
   }
 }
 @media (min-width: 1500px) {
-  .rooms-section-slide .mySwiper .swiper-wrapper {
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
     padding: 0px 22rem;
   }
 }
 @media (min-width: 1750px) {
-  .rooms-section-slide .mySwiper .swiper-wrapper {
+  .rooms-section-slide .mySwiperRooms .swiper-wrapper {
     padding: 0px 25rem;
   }
 }
@@ -885,7 +885,7 @@ input::-webkit-datetime-edit {
     padding: 3rem 15%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   #intro-video-section {
     display: flex;
   }
@@ -914,6 +914,9 @@ input::-webkit-datetime-edit {
     height: 335px;
   }
 }
+#facilities-section .mySwiperFacilities-mobile-container .swiper-pagination-bullet-active {
+  background: #bead8e;
+}
 #facilities-section .facilities-container {
   padding: 3rem 2rem;
 }
@@ -936,6 +939,11 @@ input::-webkit-datetime-edit {
   line-height: 52px;
   letter-spacing: -1.2px;
   color: #222222;
+}
+#facilities-section .facilities-container-card {
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 21rem;
 }
 #facilities-section .facilities-container-card-imgs {
   position: relative;
@@ -964,6 +972,7 @@ input::-webkit-datetime-edit {
   color: #222222;
 }
 #facilities-section .facilities-container-card-description {
+  max-width: 17rem;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

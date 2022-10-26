@@ -1,6 +1,11 @@
 @use 'variables';
 
 #facilities-section {
+  .mySwiperFacilities-mobile-container {
+    .swiper-pagination-bullet-active {
+      background: variables.$color-light-gold;
+    }
+  }
   .facilities-container {
     padding: 3rem 2rem;
     &-legend {
@@ -24,6 +29,9 @@
       color: variables.$color-light-black;
     }
     &-card {
+      margin: auto;
+      margin-bottom: 3rem;
+      max-width: 21rem;
       &-imgs {
         position: relative;
         min-height: 8rem;
@@ -51,6 +59,7 @@
         color: variables.$color-light-black;
       }
       &-description {
+        max-width: 17rem;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
