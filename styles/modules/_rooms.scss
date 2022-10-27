@@ -3,6 +3,7 @@
 #rooms-section {
   margin-top: 4rem;
   min-height: 42rem;
+  max-width: 209.5rem;
 }
 
 .rooms-section-title {
@@ -207,6 +208,9 @@
 }
 
 @media (min-width: 2000px) {
+  #rooms-section {
+    padding: 0 9%;
+  }
   .rooms-section-slide {
     max-width: 2050px;
     .mySwiperRooms {

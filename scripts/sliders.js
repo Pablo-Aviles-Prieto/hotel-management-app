@@ -55,3 +55,23 @@ const swiperForFirstMenu = new Swiper('.mySwiperFirstMenu', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiperForSecondMenu = new Swiper('.mySwiperSecondMenu', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
