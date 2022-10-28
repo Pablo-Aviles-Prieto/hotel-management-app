@@ -3,9 +3,9 @@
 .footer-container {
   padding: 2rem 1rem;
   margin-top: 3rem;
-  max-width: 87.5rem;
   background-image: url(../../assets/footer/rectangle_footer.svg);
   &-info {
+    max-width: 20rem;
     &-logo {
       display: flex;
       gap: 1.5rem;
@@ -44,6 +44,7 @@
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         background-color: variables.$color-lightest-white;
         .icon-social-networks {
+          cursor: pointer;
           height: 20px;
           background-color: variables.$color-white;
           svg {
@@ -61,6 +62,7 @@
     }
   }
   &-services {
+    max-width: 26.5rem;
     margin: 3rem 0;
     p {
       font-family: variables.$font-old-standard;
@@ -71,7 +73,7 @@
     &-info {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      justify-items: center;
+      justify-items: left;
       gap: 1.1rem;
       ul {
         font-family: variables.$font-roboto;
@@ -115,9 +117,12 @@
 }
 
 .footer-bar {
-  max-width: 87.5rem;
+  min-height: 4rem;
   padding: 1rem;
   background-color: variables.$color-lightest-white;
+  &--container {
+    max-width: 87.5rem;
+  }
   &-copyright {
     margin-bottom: 1.5rem;
     font-family: variables.$font-roboto;
@@ -134,5 +139,79 @@
     line-height: 1rem;
     letter-spacing: -0.48px;
     color: variables.$color-light-black;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer-container {
+    &-services {
+      margin: 0;
+      &-info {
+        gap: 2.5rem;
+        ul {
+          font-size: 1rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+  .footer-bar {
+    &--container {
+      margin-top: 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-copyright {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    gap: 1.1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer-bar {
+    padding: 1rem 15%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer-container {
+    padding: 1rem 15%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    &-services {
+      &-info {
+        ul {
+          font-size: 0.8rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1640px) {
+  .footer-container {
+    &-services {
+      &-info {
+        ul {
+          font-size: 1rem;
+          line-height: 3rem;
+        }
+      }
+    }
   }
 }

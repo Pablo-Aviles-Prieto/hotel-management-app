@@ -35,11 +35,14 @@
   .swiper-slide-bottom {
     position: absolute;
     bottom: -200px;
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
     width: 90%;
     height: 220px;
     background-color: variables.$color-white;
     text-align: center;
+    @media (min-width: 350px) {
+      padding: 1rem 1.5rem;
+    }
     &-title {
       font-family: variables.$font-old-standard;
       font-weight: 400;
