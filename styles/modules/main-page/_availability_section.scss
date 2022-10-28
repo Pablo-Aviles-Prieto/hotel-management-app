@@ -1,6 +1,6 @@
-@use 'variables';
-@use 'inputs';
-@use 'buttons';
+@use '../shared/variables';
+@use '../shared/inputs';
+@use '../shared/buttons';
 
 .availability-container {
   min-height: 325px;

@@ -1,0 +1,42 @@
+@use 'variables';
+
+.description-container {
+  position: relative;
+  color: variables.$color-white;
+  min-height: 15rem;
+  background-color: variables.$color-solid-grey;
+  padding: 4rem 1.5rem;
+  &--legend {
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+  }
+  &--title {
+    margin-top: 1rem;
+    font-family: variables.$font-old-standard;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -1.2px;
+  }
+  &--info-card {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    padding: 1rem 1.5rem;
+    color: variables.$color-black;
+    background-color: variables.$color-white;
+    p {
+      font-family: 'Archivo';
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: variables.$color-light-black;
+      span {
+        color: variables.$color-light-gold;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'buttons';
+@use '../shared/variables';
+@use '../shared/buttons';
 
 .first-section-container {
   min-height: 30rem;
