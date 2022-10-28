@@ -498,7 +498,7 @@
     padding: 7rem 15%;
   }
   .description-container--info-card {
-    right: 16%;
+    right: 15%;
   }
 }
 .first-section-container {
@@ -1511,6 +1511,103 @@ input::-webkit-datetime-edit {
   .stats-container {
     margin: 0 15%;
   }
+}
+
+.info-container {
+  padding: 2rem 1rem;
+}
+@media (min-width: 930px) {
+  .info-container {
+    padding: 2rem 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .info-container {
+    padding: 2rem 15%;
+  }
+}
+.info-container-video {
+  margin-bottom: 2rem;
+}
+.info-container-video video {
+  width: 100%;
+}
+.info-container-description p {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -1.16px;
+  color: #222222;
+}
+@media (min-width: 930px) {
+  .info-container-description p {
+    font-size: 42px;
+    line-height: 55px;
+    letter-spacing: -2.16px;
+  }
+}
+.info-container-description p span {
+  display: block;
+  font-family: inherit;
+}
+@media (min-width: 450px) {
+  .info-container-description p span {
+    display: inline;
+  }
+}
+.info-container-description-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+@media (min-width: 750px) {
+  .info-container-description-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+}
+.info-container-description-images-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.7rem;
+  width: 100%;
+}
+.info-container-description-images-card svg {
+  width: 80px;
+  height: 80px;
+  fill: #bead8e;
+}
+.info-container-description-images-card p {
+  margin-top: 0.8rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222222;
+}
+@media (min-width: 350px) {
+  .info-container-description-images-card p {
+    font-size: 11px;
+  }
+}
+@media (min-width: 500px) {
+  .info-container-description-images-card p {
+    font-size: 12px;
+  }
+}
+.info-container-description-images-card:hover {
+  background-color: #bead8e;
+}
+.info-container-description-images-card:hover svg {
+  fill: #fff;
+}
+.info-container-description-images-card:hover p {
+  color: #fff;
 }
 
 html,
