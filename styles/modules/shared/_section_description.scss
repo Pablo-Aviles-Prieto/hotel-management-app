@@ -1,11 +1,14 @@
 @use 'variables';
 
+#description-section {
+  background-color: variables.$color-solid-grey;
+}
 .description-container {
   position: relative;
   color: variables.$color-white;
   min-height: 15rem;
-  background-color: variables.$color-solid-grey;
   padding: 4rem 1.5rem;
+  // max-width: 87.5rem;
   &--legend {
     font-weight: 400;
     font-size: 0.7rem;
@@ -37,6 +40,24 @@
       span {
         color: variables.$color-light-gold;
       }
+    }
+  }
+}
+
+@media (min-width: 930px) {
+  .description-container {
+    padding: 7rem 10%;
+    &--info-card {
+      right: 10%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .description-container {
+    padding: 7rem 15%;
+    &--info-card {
+      right: 16%;
     }
   }
 }

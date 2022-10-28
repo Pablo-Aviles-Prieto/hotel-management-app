@@ -441,11 +441,14 @@
     line-height: 3rem;
   }
 }
+#description-section {
+  background-color: #333333;
+}
+
 .description-container {
   position: relative;
   color: #fff;
   min-height: 15rem;
-  background-color: #333333;
   padding: 4rem 1.5rem;
 }
 .description-container--legend {
@@ -482,6 +485,22 @@
   color: #bead8e;
 }
 
+@media (min-width: 930px) {
+  .description-container {
+    padding: 7rem 10%;
+  }
+  .description-container--info-card {
+    right: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .description-container {
+    padding: 7rem 15%;
+  }
+  .description-container--info-card {
+    right: 16%;
+  }
+}
 .first-section-container {
   min-height: 30rem;
   background-color: #333333;
