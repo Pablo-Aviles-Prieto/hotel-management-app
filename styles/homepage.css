@@ -1,35 +1,4 @@
 @charset "UTF-8";
-.swiper .swiper-button-next,
-.swiper .swiper-button-prev {
-  width: 2rem;
-  height: 2rem;
-  color: #000;
-  background-color: #f1f0f0;
-}
-@media (min-width: 700px) {
-  .swiper .swiper-button-next,
-.swiper .swiper-button-prev {
-    width: 3rem;
-    height: 3rem;
-  }
-}
-.swiper .swiper-button-next:hover,
-.swiper .swiper-button-prev:hover {
-  background-color: #bead8e;
-  color: #fff;
-  border: 0;
-}
-.swiper .swiper-button-next::after {
-  content: "﹥";
-  font-size: 18px;
-  font-weight: 700;
-}
-.swiper .swiper-button-prev::after {
-  content: "﹤";
-  font-size: 18px;
-  font-weight: 700;
-}
-
 .container-nav {
   z-index: 1;
   position: relative;
@@ -441,6 +410,65 @@
     line-height: 3rem;
   }
 }
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-family: "Archivo", sans-serif;
+  list-style: none;
+}
+
+body {
+  min-width: 320px;
+  background-color: #fff;
+}
+@media (min-width: 2500px) {
+  body {
+    margin: 0 auto;
+    max-width: 150rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+  background-color: #f1f0f0;
+}
+@media (min-width: 700px) {
+  .swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover {
+  background-color: #bead8e;
+  color: #fff;
+  border: 0;
+}
+.swiper .swiper-button-next::after {
+  content: "﹥";
+  font-size: 18px;
+  font-weight: 700;
+}
+.swiper .swiper-button-prev::after {
+  content: "﹤";
+  font-size: 18px;
+  font-weight: 700;
+}
+
 #description-section {
   background-color: #333333;
 }
@@ -541,7 +569,7 @@
   letter-spacing: 2.8px;
   padding: 0 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: #bead8e;
   border: 0;
 }
@@ -557,7 +585,7 @@
   letter-spacing: 2.8px;
   padding: 0 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.33);
 }
@@ -681,7 +709,7 @@ input::-webkit-datetime-edit {
   letter-spacing: 2.8px;
   padding: 0 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: #bead8e;
   border: 0;
 }
@@ -768,7 +796,7 @@ input::-webkit-datetime-edit {
   letter-spacing: 2.8px;
   padding: 0 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: #bead8e;
   border: 0;
 }
@@ -1145,7 +1173,7 @@ input::-webkit-datetime-edit {
   letter-spacing: 2.8px;
   padding: 0 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: #bead8e;
   border: 0;
 }
@@ -1193,6 +1221,9 @@ input::-webkit-datetime-edit {
     height: 335px;
   }
 }
+#facilities-section {
+  background: #fff;
+}
 #facilities-section .mySwiperFacilities-mobile-container .swiper-pagination-bullet-active {
   background: #bead8e;
 }
@@ -1202,7 +1233,6 @@ input::-webkit-datetime-edit {
 @media (min-width: 1100px) {
   #facilities-section .facilities-container {
     padding: 3rem 0;
-    max-width: 120.5rem;
   }
 }
 #facilities-section .facilities-container-legend {
@@ -1236,6 +1266,20 @@ input::-webkit-datetime-edit {
   margin: auto;
   margin-bottom: 3rem;
   max-width: 21rem;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+@media (min-width: 800px) {
+  #facilities-section .facilities-container-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+}
+@media (min-width: 1100px) {
+  #facilities-section .facilities-container-card {
+    margin-bottom: 0;
+  }
 }
 #facilities-section .facilities-container-card-imgs {
   position: relative;
@@ -1284,8 +1328,12 @@ input::-webkit-datetime-edit {
     gap: 3.1rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin: auto 15%;
     max-width: 87.5rem;
+  }
+}
+@media (min-width: 1380px) {
+  #facilities-section .facilities-container .mySwiperFacilities-desktop-container {
+    margin: auto 15%;
   }
 }
 
@@ -1513,211 +1561,4 @@ input::-webkit-datetime-edit {
   }
 }
 
-.info-container {
-  padding: 2rem 1rem;
-}
-@media (min-width: 930px) {
-  .info-container {
-    padding: 2rem 10%;
-  }
-}
-@media (min-width: 1200px) {
-  .info-container {
-    padding: 2rem 15%;
-  }
-}
-.info-container-video {
-  margin-bottom: 2rem;
-}
-.info-container-video video {
-  width: 100%;
-}
-.info-container-description p {
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 28px;
-  line-height: 35px;
-  text-align: center;
-  letter-spacing: -1.16px;
-  color: #222222;
-}
-@media (min-width: 930px) {
-  .info-container-description p {
-    font-size: 42px;
-    line-height: 55px;
-    letter-spacing: -2.16px;
-  }
-}
-.info-container-description p span {
-  display: block;
-  font-family: inherit;
-}
-@media (min-width: 450px) {
-  .info-container-description p span {
-    display: inline;
-  }
-}
-.info-container-description-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-}
-@media (min-width: 750px) {
-  .info-container-description-images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-  }
-}
-.info-container-description-images-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0.7rem;
-  width: 100%;
-}
-.info-container-description-images-card svg {
-  width: 80px;
-  height: 80px;
-  fill: #bead8e;
-}
-.info-container-description-images-card p {
-  margin-top: 0.8rem;
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #222222;
-}
-@media (min-width: 350px) {
-  .info-container-description-images-card p {
-    font-size: 11px;
-  }
-}
-@media (min-width: 500px) {
-  .info-container-description-images-card p {
-    font-size: 12px;
-  }
-}
-.info-container-description-images-card:hover {
-  background-color: #bead8e;
-}
-.info-container-description-images-card:hover svg {
-  fill: #fff;
-}
-.info-container-description-images-card:hover p {
-  color: #fff;
-}
-.info-container-restaurant {
-  margin-top: 2rem;
-  padding: 1.2rem;
-  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
-}
-@media (min-width: 930px) {
-  .info-container-restaurant {
-    display: flex;
-    gap: 2rem;
-  }
-}
-.info-container-restaurant-img {
-  height: 16.5rem;
-}
-@media (min-width: 930px) {
-  .info-container-restaurant-img {
-    min-width: 50%;
-    height: 336px;
-  }
-}
-@media (min-width: 1580px) {
-  .info-container-restaurant-img {
-    height: 370px;
-  }
-}
-.info-container-restaurant-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (min-width: 1650px) {
-  .info-container-restaurant-card {
-    max-width: 500px;
-  }
-}
-.info-container-restaurant-card-legend {
-  margin: 1.5rem 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: #777777;
-}
-.info-container-restaurant-card h2 {
-  font-family: "Old Standard TT", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 39px;
-  letter-spacing: -1.05px;
-  color: #222222;
-}
-@media (min-width: 1580px) {
-  .info-container-restaurant-card h2 {
-    font-size: 48px;
-    line-height: 59px;
-    letter-spacing: -1.44px;
-  }
-}
-.info-container-restaurant-card-description {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 14px;
-  line-height: 20px;
-  color: #777777;
-}
-.info-container-restaurant-card button {
-  cursor: pointer;
-  min-width: 13.75rem;
-  height: 3.75rem;
-  font-family: "Archivo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  padding: 0 2rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #bead8e;
-  border: 0;
-}
-
-html,
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-  font-family: "Archivo", sans-serif;
-  list-style: none;
-}
-
-body {
-  min-width: 320px;
-  background-color: #fff;
-}
-@media (min-width: 2500px) {
-  body {
-    margin: 0 auto;
-    max-width: 150rem;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=homepage.css.map */
