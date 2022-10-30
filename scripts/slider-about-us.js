@@ -15,3 +15,19 @@ const swiperForFacilities = new Swiper('.mySwiperFacilities', {
     clickable: true,
   },
 });
+
+const swiperForCounter = new Swiper('.mySwiperCounter', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
