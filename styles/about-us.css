@@ -158,7 +158,6 @@
   .bground-header-container .container-nav {
     padding: 0 1rem;
     height: 7rem;
-    max-width: 102.5rem;
   }
   .bground-header-container .container-nav-navbar {
     padding: 0;
@@ -335,9 +334,6 @@
   padding: 1rem;
   background-color: #f9f9f9;
 }
-.footer-bar--container {
-  max-width: 87.5rem;
-}
 .footer-bar-copyright {
   margin-bottom: 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -392,7 +388,7 @@
 }
 @media (min-width: 1100px) {
   .footer-container {
-    padding: 1rem 15%;
+    padding: 3rem 15% 2rem 15%;
   }
 }
 @media (min-width: 1300px) {
@@ -515,7 +511,7 @@ a {
 
 @media (min-width: 930px) {
   .description-container {
-    padding: 7rem 10%;
+    padding: 7rem 10% 4rem 10%;
   }
   .description-container--info-card {
     right: 10%;
@@ -523,7 +519,7 @@ a {
 }
 @media (min-width: 1200px) {
   .description-container {
-    padding: 7rem 15%;
+    padding: 7rem 15% 4rem 15%;
   }
   .description-container--info-card {
     right: 15%;
@@ -648,6 +644,7 @@ a {
 @media (min-width: 1580px) {
   .info-container-restaurant-img {
     height: 370px;
+    width: 100%;
   }
 }
 .info-container-restaurant-img img {
@@ -815,7 +812,6 @@ a {
     gap: 3.1rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    max-width: 87.5rem;
   }
 }
 @media (min-width: 1380px) {
@@ -853,6 +849,7 @@ a {
   margin: 3rem 0;
   justify-content: space-between;
   padding: 0 10px;
+  max-width: 22rem;
 }
 .counter-container-stats-card-content {
   display: flex;
@@ -892,6 +889,43 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.counter-container-desktop {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .counter-container-slider {
+    display: none;
+  }
+  .counter-container-desktop {
+    display: flex;
+    gap: 4%;
+    height: 350px;
+  }
+  .counter-container-desktop-img {
+    width: 48%;
+  }
+  .counter-container-desktop-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1100px) {
+  .counter-container {
+    padding: 0;
+    padding-top: 3rem;
+    margin: auto 15%;
+  }
+  .counter-container-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .counter-container-stats-card {
+    width: 100%;
+    max-width: 22rem;
+  }
 }
 
 /*# sourceMappingURL=about-us.css.map */

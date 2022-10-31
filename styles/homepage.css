@@ -158,7 +158,6 @@
   .bground-header-container .container-nav {
     padding: 0 1rem;
     height: 7rem;
-    max-width: 102.5rem;
   }
   .bground-header-container .container-nav-navbar {
     padding: 0;
@@ -335,9 +334,6 @@
   padding: 1rem;
   background-color: #f9f9f9;
 }
-.footer-bar--container {
-  max-width: 87.5rem;
-}
 .footer-bar-copyright {
   margin-bottom: 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -392,7 +388,7 @@
 }
 @media (min-width: 1100px) {
   .footer-container {
-    padding: 1rem 15%;
+    padding: 3rem 15% 2rem 15%;
   }
 }
 @media (min-width: 1300px) {
@@ -515,7 +511,7 @@ a {
 
 @media (min-width: 930px) {
   .description-container {
-    padding: 7rem 10%;
+    padding: 7rem 10% 4rem 10%;
   }
   .description-container--info-card {
     right: 10%;
@@ -523,7 +519,7 @@ a {
 }
 @media (min-width: 1200px) {
   .description-container {
-    padding: 7rem 15%;
+    padding: 7rem 15% 4rem 15%;
   }
   .description-container--info-card {
     right: 15%;
@@ -626,7 +622,7 @@ a {
 }
 @media (min-width: 850px) {
   .first-section-container {
-    padding: 5rem 15%;
+    padding: 10rem 15% 6rem 15%;
   }
   .first-section-container-info {
     max-width: 600px;
@@ -741,7 +737,6 @@ input::-webkit-datetime-edit {
   .availability-container-form {
     display: flex;
     gap: 2rem;
-    max-width: 87.5rem;
   }
   .availability-container-form--flex {
     width: 100%;
@@ -893,7 +888,6 @@ input::-webkit-datetime-edit {
   #about-section {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1135px;
     margin: 5rem 15%;
   }
   .about-section-description {
@@ -906,6 +900,10 @@ input::-webkit-datetime-edit {
   }
   .about-section-description-title, .about-section-description-info {
     max-width: 25rem;
+  }
+  .about-section-description-title {
+    font-size: 60px;
+    line-height: 70px;
   }
   .about-section-images {
     display: flex;
@@ -1209,16 +1207,24 @@ input::-webkit-datetime-edit {
     width: 524px;
     height: 304px;
   }
+}
+@media (min-width: 1150px) and (min-width: 1400px) {
+  .intro-video-container-content-video video {
+    width: 674px;
+    height: 383px;
+    right: -517px;
+    top: -343px;
+  }
+}
+@media (min-width: 1150px) and (min-width: 2300px) {
+  .intro-video-container-content-video video {
+    right: -718px;
+  }
+}
+@media (min-width: 1150px) {
   .intro-video-desktop-container {
     width: 25%;
     background-color: #ad9d82;
-  }
-}
-@media (min-width: 1400px) {
-  .intro-video-container-content-video video {
-    right: -395px;
-    width: 596px;
-    height: 335px;
   }
 }
 #facilities-section {
@@ -1328,7 +1334,6 @@ input::-webkit-datetime-edit {
     gap: 3.1rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    max-width: 87.5rem;
   }
 }
 @media (min-width: 1380px) {
@@ -1389,7 +1394,6 @@ input::-webkit-datetime-edit {
 }
 .menu-container-second-slider {
   margin: 4rem 0;
-  max-width: 87.5rem;
   width: 100%;
   height: 20rem;
 }
@@ -1496,7 +1500,7 @@ input::-webkit-datetime-edit {
 }
 @media (min-width: 1190px) {
   .menu-container-first-slider {
-    max-width: 87.5rem;
+    max-width: none;
   }
   .menu-container .food-card-item--content {
     padding: 1rem 0.5rem 1rem 1rem;
@@ -1526,7 +1530,6 @@ input::-webkit-datetime-edit {
 .stats-container {
   margin: auto;
   padding: 1rem 2rem;
-  max-width: 87.5rem;
   text-align: center;
   color: #fff;
   background-color: #222222;

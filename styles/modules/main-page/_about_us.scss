@@ -137,7 +137,6 @@
   #about-section {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1135px;
     margin: 5rem 15%;
   }
   .about-section-description {
@@ -150,6 +149,10 @@
     &-title,
     &-info {
       max-width: 25rem;
+    }
+    &-title {
+      font-size: 60px;
+      line-height: 70px;
     }
   }
   .about-section-images {
