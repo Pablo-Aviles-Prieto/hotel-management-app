@@ -9,6 +9,10 @@ const swiperForRoomsDetails = new Swiper('.mySwiperOffers', {
       slidesPerView: 2,
       spaceBetween: 30,
     },
+    1500: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
   navigation: {
     nextEl: '.swiper-button-next',
