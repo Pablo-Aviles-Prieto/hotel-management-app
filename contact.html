@@ -24,6 +24,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script type="module" src="scripts/maps.js"></script>
     <script src="scripts/mobile-menu.js" defer></script>
   </head>
   <body>
@@ -144,12 +147,13 @@
             <div class="info-container-card-bground">03</div>
           </div>
         </div>
-        <div class="info-container-img">
+        <div id="map"></div>
+        <!-- <div class="info-container-img">
           <img
             src="./assets/main-hotel/underground1.jpg"
             alt="View of the hotel"
           />
-        </div>
+        </div> -->
       </div>
     </section>
     <section id="form-section">
@@ -513,5 +517,9 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=geometry"
+      defer
+    ></script>
   </body>
 </html>

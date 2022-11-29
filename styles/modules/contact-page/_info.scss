@@ -8,6 +8,21 @@
 }
 
 .info-container {
+  #map {
+    height: 584px;
+  }
+  #distance-list-container {
+    h3 {
+      margin: 25px 0;
+      text-align: center;
+    }
+    li {
+      line-height: 25px;
+      b {
+        color: #86724c;
+      }
+    }
+  }
   &--flex {
     @media (min-width: 900px) {
       display: flex;

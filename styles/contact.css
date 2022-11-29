@@ -534,6 +534,19 @@ a {
   }
 }
 
+.info-container #map {
+  height: 584px;
+}
+.info-container #distance-list-container h3 {
+  margin: 25px 0;
+  text-align: center;
+}
+.info-container #distance-list-container li {
+  line-height: 25px;
+}
+.info-container #distance-list-container li b {
+  color: #86724c;
+}
 @media (min-width: 900px) {
   .info-container--flex {
     display: flex;
