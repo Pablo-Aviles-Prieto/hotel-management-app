@@ -15,6 +15,8 @@ let arrayOfLocations = hotelLocations;
 let findNearestMarker;
 
 function initMap() {
+  const mapElement = document.getElementById('map');
+  if (!mapElement) return;
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
     center: { lat: 40.373906, lng: -3.65405 },
