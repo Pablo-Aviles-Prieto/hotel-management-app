@@ -152,7 +152,7 @@
     display: block;
     margin-bottom: 0.6rem;
     text-transform: capitalize;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
   }
   .bground-header-container .container-nav {
@@ -166,7 +166,8 @@
   .bground-header-container .container-nav-navbar-content-logo-container {
     min-width: 10rem;
   }
-  .bground-header-container .container-nav-navbar-content-logo-container-square {
+  .bground-header-container
+    .container-nav-navbar-content-logo-container-square {
     padding: 1.3rem 1.7rem;
     font-size: 2.3rem;
   }
@@ -201,7 +202,9 @@
     align-items: center;
     justify-content: center;
   }
-  .bground-header-container .container-nav-navbar-images-container-border object {
+  .bground-header-container
+    .container-nav-navbar-images-container-border
+    object {
     width: 25px;
   }
   .mobile-menu {
@@ -222,7 +225,7 @@
 .footer-container {
   padding: 2rem 1rem;
   margin-top: 3rem;
-  background-image: url(../../assets/footer/rectangle_footer.svg);
+  background-image: url(../assets/footer/rectangle_footer.svg);
 }
 .footer-container-info {
   max-width: 20rem;
@@ -284,7 +287,7 @@
   margin: 3rem 0;
 }
 .footer-container-services p {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 1rem;
@@ -296,13 +299,13 @@
   gap: 1.1rem;
 }
 .footer-container-services-info ul {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   line-height: 2rem;
   color: #777777;
 }
 .footer-container-contact-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #222222;
@@ -314,13 +317,13 @@
   margin-top: 2rem;
 }
 .footer-container-contact .contact-method-info-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-size: 1.1rem;
   line-height: 1.3rem;
   color: #222222;
 }
 .footer-container-contact .contact-method-info-description {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   line-height: 1rem;
   color: #777777;
@@ -336,7 +339,7 @@
 }
 .footer-bar-copyright {
   margin-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1rem;
@@ -344,7 +347,7 @@
   color: #222222;
 }
 .footer-bar-info {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 1rem;
@@ -414,7 +417,7 @@ html,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   list-style: none;
 }
 
@@ -443,7 +446,7 @@ a {
 }
 @media (min-width: 700px) {
   .swiper .swiper-button-next,
-.swiper .swiper-button-prev {
+  .swiper .swiper-button-prev {
     width: 3rem;
     height: 3rem;
   }
@@ -455,12 +458,12 @@ a {
   border: 0;
 }
 .swiper .swiper-button-next::after {
-  content: "﹥";
+  content: '﹥';
   font-size: 18px;
   font-weight: 700;
 }
 .swiper .swiper-button-prev::after {
-  content: "﹤";
+  content: '﹤';
   font-size: 18px;
   font-weight: 700;
 }
@@ -484,7 +487,7 @@ a {
 }
 .description-container--title {
   margin-top: 1rem;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 3.5rem;
@@ -499,7 +502,7 @@ a {
   background-color: #fff;
 }
 .description-container--info-card p {
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-weight: 700;
   font-size: 1rem;
   line-height: 1rem;
@@ -592,7 +595,7 @@ a {
   margin-bottom: 1rem;
 }
 .offers-section-card-title h3 {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -642,7 +645,7 @@ a {
   }
 }
 .offers-section-card-description-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -672,7 +675,7 @@ a {
   gap: 10px;
 }
 .offers-section-card-description-grid-card p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #777777;
@@ -681,7 +684,7 @@ a {
   cursor: pointer;
   min-width: 13.75rem;
   height: 3.75rem;
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -718,7 +721,7 @@ a {
   color: #bead8e;
 }
 .popular-container-title h3 {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -775,7 +778,7 @@ a {
   padding-top: 1rem;
 }
 .rooms-card-bottom-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
@@ -783,7 +786,7 @@ a {
   color: #222222;
 }
 .rooms-card-bottom-content {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
   margin: 1rem auto;

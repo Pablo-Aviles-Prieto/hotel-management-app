@@ -152,7 +152,7 @@
     display: block;
     margin-bottom: 0.6rem;
     text-transform: capitalize;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
   }
   .bground-header-container .container-nav {
@@ -166,7 +166,8 @@
   .bground-header-container .container-nav-navbar-content-logo-container {
     min-width: 10rem;
   }
-  .bground-header-container .container-nav-navbar-content-logo-container-square {
+  .bground-header-container
+    .container-nav-navbar-content-logo-container-square {
     padding: 1.3rem 1.7rem;
     font-size: 2.3rem;
   }
@@ -201,7 +202,9 @@
     align-items: center;
     justify-content: center;
   }
-  .bground-header-container .container-nav-navbar-images-container-border object {
+  .bground-header-container
+    .container-nav-navbar-images-container-border
+    object {
     width: 25px;
   }
   .mobile-menu {
@@ -222,7 +225,7 @@
 .footer-container {
   padding: 2rem 1rem;
   margin-top: 3rem;
-  background-image: url(../../assets/footer/rectangle_footer.svg);
+  background-image: url(../assets/footer/rectangle_footer.svg);
 }
 .footer-container-info {
   max-width: 20rem;
@@ -284,7 +287,7 @@
   margin: 3rem 0;
 }
 .footer-container-services p {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 1rem;
@@ -296,13 +299,13 @@
   gap: 1.1rem;
 }
 .footer-container-services-info ul {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   line-height: 2rem;
   color: #777777;
 }
 .footer-container-contact-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #222222;
@@ -314,13 +317,13 @@
   margin-top: 2rem;
 }
 .footer-container-contact .contact-method-info-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-size: 1.1rem;
   line-height: 1.3rem;
   color: #222222;
 }
 .footer-container-contact .contact-method-info-description {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   line-height: 1rem;
   color: #777777;
@@ -336,7 +339,7 @@
 }
 .footer-bar-copyright {
   margin-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1rem;
@@ -344,7 +347,7 @@
   color: #222222;
 }
 .footer-bar-info {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 1rem;
@@ -414,7 +417,7 @@ html,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   list-style: none;
 }
 
@@ -443,7 +446,7 @@ a {
 }
 @media (min-width: 700px) {
   .swiper .swiper-button-next,
-.swiper .swiper-button-prev {
+  .swiper .swiper-button-prev {
     width: 3rem;
     height: 3rem;
   }
@@ -455,12 +458,12 @@ a {
   border: 0;
 }
 .swiper .swiper-button-next::after {
-  content: "﹥";
+  content: '﹥';
   font-size: 18px;
   font-weight: 700;
 }
 .swiper .swiper-button-prev::after {
-  content: "﹤";
+  content: '﹤';
   font-size: 18px;
   font-weight: 700;
 }
@@ -484,7 +487,7 @@ a {
 }
 .description-container--title {
   margin-top: 1rem;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 3.5rem;
@@ -499,7 +502,7 @@ a {
   background-color: #fff;
 }
 .description-container--info-card p {
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-weight: 700;
   font-size: 1rem;
   line-height: 1rem;
@@ -547,7 +550,7 @@ a {
 }
 .first-section-container-info p {
   text-transform: capitalize;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 54px;
   line-height: 60px;
@@ -557,7 +560,7 @@ a {
   cursor: pointer;
   min-width: 13.75rem;
   height: 3.75rem;
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -573,7 +576,7 @@ a {
   cursor: pointer;
   min-width: 13.75rem;
   height: 3.75rem;
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -651,7 +654,7 @@ a {
   color-scheme: dark;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator {
   opacity: 1;
   display: block;
   background-repeat: no-repeat;
@@ -661,7 +664,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   filter: invert(0.5) sepia(1);
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator {
   position: absolute;
   left: 0;
 }
@@ -688,7 +691,7 @@ input::-webkit-datetime-edit {
   margin-bottom: 1rem;
 }
 .availability-container-form-input label {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 0.9rem;
@@ -697,7 +700,7 @@ input::-webkit-datetime-edit {
   cursor: pointer;
   min-width: 13.75rem;
   height: 3.75rem;
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -764,7 +767,7 @@ input::-webkit-datetime-edit {
   text-transform: uppercase;
 }
 .about-section-description-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 50px;
   line-height: 55px;
@@ -783,7 +786,7 @@ input::-webkit-datetime-edit {
   cursor: pointer;
   min-width: 13.75rem;
   height: 3.75rem;
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -810,7 +813,7 @@ input::-webkit-datetime-edit {
 }
 .about-section-images-first-description {
   padding-top: 3rem;
-  background-image: url("../../assets/icons/team-group-bg.svg");
+  background-image: url('../../assets/icons/team-group-bg.svg');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 150px;
@@ -830,7 +833,7 @@ input::-webkit-datetime-edit {
 }
 .about-section-images-first-description-title {
   margin: 1rem auto;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -867,7 +870,7 @@ input::-webkit-datetime-edit {
 }
 .about-section-images-second-description-title {
   margin: 1rem auto;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -898,7 +901,8 @@ input::-webkit-datetime-edit {
     padding-left: 10rem;
     padding-bottom: 17rem;
   }
-  .about-section-description-title, .about-section-description-info {
+  .about-section-description-title,
+  .about-section-description-info {
     max-width: 25rem;
   }
   .about-section-description-title {
@@ -944,7 +948,7 @@ input::-webkit-datetime-edit {
 }
 .rooms-section-title h2 {
   margin-top: 1rem;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -973,7 +977,7 @@ input::-webkit-datetime-edit {
   }
 }
 .rooms-section-slide .swiper-slide-bottom-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
@@ -981,7 +985,7 @@ input::-webkit-datetime-edit {
   color: #222222;
 }
 .rooms-section-slide .swiper-slide-bottom-content {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
   margin: 1rem auto;
@@ -1075,7 +1079,7 @@ input::-webkit-datetime-edit {
     align-items: center;
   }
   .rooms-section-slide .swiper-button-next,
-.rooms-section-slide .swiper-button-prev {
+  .rooms-section-slide .swiper-button-prev {
     top: 39%;
   }
 }
@@ -1140,7 +1144,7 @@ input::-webkit-datetime-edit {
 }
 .intro-video-container-content-title {
   margin: 1rem auto;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 60px;
@@ -1163,7 +1167,7 @@ input::-webkit-datetime-edit {
   cursor: pointer;
   min-width: 13.75rem;
   height: 3.75rem;
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1230,7 +1234,9 @@ input::-webkit-datetime-edit {
 #facilities-section {
   background: #fff;
 }
-#facilities-section .mySwiperFacilities-mobile-container .swiper-pagination-bullet-active {
+#facilities-section
+  .mySwiperFacilities-mobile-container
+  .swiper-pagination-bullet-active {
   background: #bead8e;
 }
 #facilities-section .facilities-container {
@@ -1254,7 +1260,7 @@ input::-webkit-datetime-edit {
   text-align: center;
   margin: 1rem 0;
   margin-bottom: 2rem;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 52px;
@@ -1306,7 +1312,7 @@ input::-webkit-datetime-edit {
 }
 #facilities-section .facilities-container-card-title {
   margin-bottom: 2rem;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1321,15 +1327,21 @@ input::-webkit-datetime-edit {
   color: #777777;
 }
 @media (min-width: 1100px) {
-  #facilities-section .facilities-container .mySwiperFacilities-mobile-container {
+  #facilities-section
+    .facilities-container
+    .mySwiperFacilities-mobile-container {
     display: none;
   }
 }
-#facilities-section .facilities-container .mySwiperFacilities-desktop-container {
+#facilities-section
+  .facilities-container
+  .mySwiperFacilities-desktop-container {
   display: none;
 }
 @media (min-width: 1100px) {
-  #facilities-section .facilities-container .mySwiperFacilities-desktop-container {
+  #facilities-section
+    .facilities-container
+    .mySwiperFacilities-desktop-container {
     display: grid;
     gap: 3.1rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1337,7 +1349,9 @@ input::-webkit-datetime-edit {
   }
 }
 @media (min-width: 1380px) {
-  #facilities-section .facilities-container .mySwiperFacilities-desktop-container {
+  #facilities-section
+    .facilities-container
+    .mySwiperFacilities-desktop-container {
     margin: auto 15%;
   }
 }
@@ -1362,7 +1376,7 @@ input::-webkit-datetime-edit {
   color: #777777;
 }
 .menu-container-title {
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 60px;
@@ -1376,7 +1390,7 @@ input::-webkit-datetime-edit {
 }
 @media (min-width: 700px) {
   .menu-container-first-slider .swiper-button-next,
-.menu-container-first-slider .swiper-button-prev {
+  .menu-container-first-slider .swiper-button-prev {
     top: 93.5%;
   }
 }
@@ -1400,7 +1414,9 @@ input::-webkit-datetime-edit {
 .menu-container-second-slider .swiper-slide {
   margin-bottom: 3rem;
 }
-.menu-container-second-slider .mySwiperSecondMenu .swiper-pagination-bullet-active {
+.menu-container-second-slider
+  .mySwiperSecondMenu
+  .swiper-pagination-bullet-active {
   background-color: #bead8e;
 }
 .menu-container-second-slider img {
@@ -1446,7 +1462,7 @@ input::-webkit-datetime-edit {
 }
 .menu-container .food-card-item--content h3 {
   margin-bottom: 0.2rem;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 22px;
@@ -1455,7 +1471,7 @@ input::-webkit-datetime-edit {
 }
 .menu-container .food-card-item--content p {
   max-width: 18rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1515,7 +1531,9 @@ input::-webkit-datetime-edit {
   .menu-container .food-card-item--content:hover {
     display: flex;
   }
-  .menu-container .food-card-item--content:hover .food-card-item--content-arrow {
+  .menu-container
+    .food-card-item--content:hover
+    .food-card-item--content-arrow {
     display: block;
   }
 }
@@ -1541,7 +1559,7 @@ input::-webkit-datetime-edit {
   margin-bottom: 1rem;
 }
 .stats-container-item--info h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 50px;
 }
